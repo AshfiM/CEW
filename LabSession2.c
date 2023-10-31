@@ -199,26 +199,26 @@ int main() {
     // }
     // printf("\n");
 
-    struct inch_feet distance1;
-    struct inch_feet distance2;
-    struct inch_feet distance_t;
+    // struct inch_feet distance1;
+    // struct inch_feet distance2;
+    // struct inch_feet distance_t;
 
-    distance1.inch = 8;
-    distance1.feet = 2;
+    // distance1.inch = 8;
+    // distance1.feet = 2;
 
-    distance2.inch = 6;
-    distance2.feet = 3;
+    // distance2.inch = 6;
+    // distance2.feet = 3;
 
     
-    distance_t.inch = distance1.inch + distance2.inch;
-    distance_t.feet = distance1.feet + distance2.feet;
+    // distance_t.inch = distance1.inch + distance2.inch;
+    // distance_t.feet = distance1.feet + distance2.feet;
 
-    if (distance_t.inch >= 12) {
-        distance_t.inch -= 12;
-        distance_t.feet += 1; 
-    }
+    // if (distance_t.inch >= 12) {
+    //     distance_t.inch -= 12;
+    //     distance_t.feet += 1; 
+    // }
 
-    printf("distance = %d Feet %d inches\n", distance_t.feet, distance_t.inch);
+    // printf("distance = %d Feet %d inches\n", distance_t.feet, distance_t.inch);
 
 
     return 0;
