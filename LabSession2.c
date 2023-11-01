@@ -87,7 +87,7 @@ int main() {
     // printf("sum %d\n", sum);
 
 
-    // while loop
+    //while loop
 
     // int i = 0;
     // int odd = 0;
@@ -126,22 +126,22 @@ int main() {
 
     // Q 2
     
-    // int rows;
-    // printf("rows: ");
-    // scanf("%d", &rows);
-    // int spaces = rows -1;
+    int rows;
+    printf("rows: ");
+    scanf("%d", &rows);
+    int spaces = rows -1;
 
-    // for (int i = 0; i < rows; i++) {
-    //     for (int j = spaces; j > 0; j--) {
-    //         printf(" ");
-    //     }
-    //     for (int k =0; k < i; k++) {
-    //         printf("* ");
-    //     }
-    //     printf("\n");
-    //     spaces--;
+    for (int i = 0; i < rows; i++) {
+        for (int j = spaces; j > 0; j--) {
+            printf(" ");
+        }
+        for (int k =0; k < i; k++) {
+            printf("* ");
+        }
+        printf("\n");
+        spaces--;
 
-    // }
+    }
 
     // Q 3
 
@@ -180,45 +180,48 @@ int main() {
 
     // Q 5
 
-    // int i = 0;
-    // int array[10] = {1, 2, 3, 4, 5, 6, 6, 6, 7, 8};
-    // while (i < 10){
-    //     int count = 0;
-    //     int j = 0;
-    //     while (j < 10) {
-    //         if (array[i] == array[j]) {
-    //             count += 1;
-    //         }
-    //         j++;   
-    //     }
-    //     if (count == 1) {
-    //             printf("%d ", array[i]);
-    //         }
-    //     i++;
+    printf("unique elements in array ");
+    int i = 0;
+    int array[10] = {1, 2, 3, 4, 5, 6, 6, 6, 7, 8};
+    while (i < 10){
+        int count = 0;
+        int j = 0;
+        while (j < 10) {
+            if (array[i] == array[j]) {
+                count += 1;
+            }
+            j++;   
+        }
+        if (count == 1) {
+                printf("%d ", array[i]);
+            }
+        i++;
 
-    // }
-    // printf("\n");
+    }
+    printf("\n");
+     
+    // Q 6
+    
+    // struct inch_feet distance1;
+    // struct inch_feet distance2;
+    // struct inch_feet distance_t;
 
-    struct inch_feet distance1;
-    struct inch_feet distance2;
-    struct inch_feet distance_t;
+    // distance1.inch = 8;
+    // distance1.feet = 2;
 
-    distance1.inch = 8;
-    distance1.feet = 2;
-
-    distance2.inch = 6;
-    distance2.feet = 3;
+    // distance2.inch = 6;
+    // distance2.feet = 3;
 
     
-    distance_t.inch = distance1.inch + distance2.inch;
-    distance_t.feet = distance1.feet + distance2.feet;
+    // distance_t.inch = distance1.inch + distance2.inch;
+    // distance_t.feet = distance1.feet + distance2.feet;
 
-    if (distance_t.inch >= 12) {
-        distance_t.inch -= 12;
-        distance_t.feet += 1; 
-    }
+    // if (distance_t.inch >= 12) {
+    //     distance_t.inch -= 12;
+    //     distance_t.feet += 1; 
+    // }
 
-    printf("distance = %d Feet %d inches\n", distance_t.feet, distance_t.inch);
+    // printf("distance = %d Feet %d inches\n", distance_t.feet, distance_t.inch);
 
 
     return 0;
